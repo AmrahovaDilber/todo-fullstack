@@ -4,7 +4,7 @@ import AddTodo from './components/AddTodo/AddTodo'
 import TodoFilter from './components/TodoFilter/TodoFilter'
 import './App.css'
 
-const API_URL = 'http://localhost:3000/todos'
+const API_URL = import.meta.env.VITE_API_URL
 
 function App() {
   const [todos, setTodos] = useState([])
